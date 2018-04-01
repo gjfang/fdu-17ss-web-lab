@@ -38,6 +38,10 @@
     margin-right: 0.6em;
     color:#00B0FF;
 }
+.div2 a:hover{
+    color:#FFFFFF;
+    background-color: #F50057;
+}
 .section1 {
     background-color: #FFFFFF;
     padding: 0.5em;
@@ -127,6 +131,7 @@
     border-style: solid;
     border-width: 1px 1px 1px 1px;
     border-color:#C5CAE9;
+    padding-bottom: 0;
 }
 
 .h5{
