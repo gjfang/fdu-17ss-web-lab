@@ -31,14 +31,17 @@
     background-color: #3F51B5;
     padding-top: 0.3em;
     padding-bottom: 0.3em;
-    padding-left: 1em;
+    padding-left: 0.7em;
+
     margin-bottom: 0.5em;
 }
 .div2 a{
-    margin-right: 0.6em;
+    margin-right: 0;
     color:#00B0FF;
+    padding: 0.3em;
 }
 .div2 a:hover{
+
     color:#FFFFFF;
     background-color: #F50057;
 }
