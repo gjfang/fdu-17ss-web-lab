@@ -76,6 +76,14 @@
     margin-top: 0;
     margin-bottom: 0;
 }
+.div5{
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.div5 img{
+    vertical-align: bottom;
+}
 
 .p1 {
     background-color: #C5CAE9;
@@ -135,6 +143,10 @@
     border-width: 1px 1px 1px 1px;
     border-color:#C5CAE9;
     padding-bottom: 0;
+}
+.p4 img{
+    vertical-align: bottom;
+display: inline-list-item;
 }
 
 .h5{
