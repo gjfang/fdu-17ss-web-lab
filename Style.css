@@ -72,7 +72,7 @@
     background-color: #7986CB;
     padding-top:1em ;padding-bottom: 1em;padding-left: 1em;
     color: azure;
-    font-family: "Times New Roman",serif;
+    font-family: sans-serif;
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -109,7 +109,7 @@
     padding-top:1em ;padding-bottom: 1em;padding-left: 1em;
 
     color: azure;
-    font-family: "Times New Roman",serif;
+    font-family: sans-serif;
     margin-bottom: 0;
     margin-top: 0;
 }
@@ -125,7 +125,7 @@
     padding-top:1em ;padding-bottom: 1em;padding-left: 1em;
 
     color: azure;
-    font-family: "Times New Roman",serif;
+    font-family: sans-serif;
     margin-bottom: 0;
     margin-top: 0;
     margin-right: 0.5em;
@@ -140,13 +140,14 @@
     margin-left: 0;
     margin-right: 0.5em;
     border-style: solid;
-    border-width: 1px 1px 1px 1px;
+    border-width: 0 1px 1px 1px;
     border-color:#C5CAE9;
     padding-bottom: 0;
 }
 .p4 img{
-    vertical-align: bottom;
-display: inline-list-item;
+    margin-right: -0.5em;
+    vertical-align: text-bottom;
+
 }
 
 .h5{
