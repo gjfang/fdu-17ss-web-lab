@@ -40,11 +40,18 @@
     color:#00B0FF;
     padding: 0.3em;
 }
+.div2 a:link{
+    color:#00B0FF;
+}
+.div2 a:visited
+{color:#00B0FF;}
+
 .div2 a:hover{
 
     color:#FFFFFF;
     background-color: #F50057;
 }
+
 .section1 {
     background-color: #FFFFFF;
     padding: 0.5em;
