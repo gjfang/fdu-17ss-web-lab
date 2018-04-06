@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/Lab04.css">
+</head>
+<body>
+<header>
+    <h1>Share Your Travels </h1>
+    <p>let's know where you have been </p>
+</header>
+<article class="main">
+<form   action="http://www.randyconnolly.com/tests/process.php" method="post">
+    <fieldset>
+        <legend>PHOTO DETAILS </legend>
+        <table >
+            <tr>
+
+                <td colspan="2">
+                    <section>
+                    <p>Title</p>
+                    <input type="text"  name="title" placeholder="Give your photo a descriptive name"><br>
+                    <p >Description</p>
+                    <textarea placeholder="Adding a rich description will help with search results"></textarea><br>
+                    </section>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                 <section>
+                    <label for="continent"  > Continent </label><br>
+                    <select id="continent" name="Choose continent" >choose continent
+                        <option value="asia">Asia</option>
+                        <option value="africa">Africa</option>
+                        <option value="north america">North America</option>
+                        <option value="south america">South America</option>
+                        <option value="antarctica">Antarctica</option>
+                        <option value="europe">Europe</option>
+                        <option value="oceania">Oceania</option>
+                    </select><br>
+                    <label for="country">Country </label><br>
+                    <select id="country">
+                        <option value="china">China</option>
+                        <option value="america">America</option>
+                        <option value="france">France</option>
+                        <option value="british">British</option>
+                    </select><br>
+                    <label for="city">City </label><br>
+                    <input id="city" name="city">
+                    </section>
+                </td>
+
+                <td>
+                    <section  id="section1">
+
+                        <p> Copyright?</p>
+                        <label for="a"><input id="a" type="radio">All rights reserved </label><br>
+                        <label for="b"><input id="b" type="radio" checked>Creative Commons</label>
+                    </section>
+                    <section id="section2">
+                        <p>Creative Types</p>
+                        <label for="attribution"><input id="attribution" type="checkbox">Attribution</label><br>
+                        <label for="noncommercial"><input id="noncommercial" type="checkbox">Noncommercial </label><br>
+                        <label for="no derivative works"><input id="no derivative works" type="checkbox">No Derivative Works</label>
+                    </section>
+
+                </td>
+
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <p class="rectangle">  I accept the software license
+                        <label for="agree"><input id="agree" type="checkbox"></label></p></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="rate">Rate this photo<br><input id="rate" type="number"></label><br>
+                    <label for="color">Color Collection<br><input id="color" type="color" value="#000000"></label>
+                </td>
+                <td>
+                    <label for="date">Date Taken <br><input id="date" type="date" value="年/月/日"></label><br>
+                    <label for="time">Time Taken <br><input id="time" type="time" value="--:--"></label><br>
+                </td>
+            </tr>
+
+            <tr>
+
+                <td colspan="2">
+                    <footer class="rectangle">
+                    <label for="sub"><input id="sub" type="submit" value="提交" class="rounded"></label>
+                    <label for="reset"><input id="reset" type="reset" value="Clear Form" class="rounded"></label>
+                    </footer>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+
+</form>
+</article>
+</body>
+</html>
