@@ -1,106 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Title</title>
-    <link rel="stylesheet" href="css/Lab04.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
-<body>
-<header>
+<body class="container">
+<header class="">
+    <div class="row">
+        <div class="col-md-4">
     <h1>Share Your Travels </h1>
-    <p>let's know where you have been </p>
+            <p>let's know where you have been </p></div>
+        <div class="col-md-4">
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand" href="LAB%2004.html">Gallery</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#">Good Lucks</a>
+                <a class="nav-item nav-link" href="#">User</a>
+
+            </div>
+        </div>
+    </nav>
+        </div>
+    </div>
 </header>
-<article class="main">
-<form   action="http://www.randyconnolly.com/tests/process.php" method="post">
-    <fieldset>
-        <legend>PHOTO DETAILS </legend>
-        <table >
-            <tr>
 
-                <td colspan="2">
-                    <section>
-                    <p>Title</p>
-                    <input type="text"  name="title" placeholder="Give your photo a descriptive name"><br>
-                    <p >Description</p>
-                    <textarea placeholder="Adding a rich description will help with search results"></textarea><br>
-                    </section>
-                </td>
-            </tr>
+    <form class="form-control" action="http://www.randyconnolly.com/tests/process.php" method="post">
+<fieldset>
+        <div class="form-group">
+            <label for="title">Title</label>
+            <input id="title" class="form-control" type="text"  name="title" placeholder="Give your photo a descriptive name">
+        </div>
+        <div class="form-group">
+            <label for="description">Description</label>
+            <textarea id="description" class="form-control" placeholder="Adding a rich description will help with search results"></textarea>
+        </div>
+        <div class="form-group">
 
-            <tr>
-                <td>
-                 <section>
-                    <label for="continent"  > Continent </label><br>
-                    <select id="continent" name="Choose continent"  >
-                        <option value="" disabled selected>Choose continent</option>
-                        <option value="asia">Asia</option>
-                        <option value="africa">Africa</option>
-                        <option value="north america">North America</option>
-                        <option value="south america">South America</option>
-                        <option value="antarctica">Antarctica</option>
-                        <option value="europe">Europe</option>
-                        <option value="oceania">Oceania</option>
-                    </select><br>
-                    <label for="country">Country </label><br>
-                    <select id="country">
-                        <option value="" disabled selected>Choose country</option>
+                <label for="continent"  > Continent </label><br>
+                <select class="form-control" id="continent" name="Choose continent"  >
+                    <option value="" disabled selected>Choose continent</option>
+                    <option value="asia">Asia</option>
+                    <option value="africa">Africa</option>
+                    <option value="north america">North America</option>
+                    <option value="south america">South America</option>
+                    <option value="antarctica">Antarctica</option>
+                    <option value="europe">Europe</option>
+                    <option value="oceania">Oceania</option>
+                </select>
+        </div>
+        <div class="form-group">
+            <label for="country"  > Country </label><br>
+            <select class="form-control" id="country">
+                <option value="" disabled selected>Choose country</option>
 
-                        <option value="china">China</option>
-                        <option value="america">America</option>
-                        <option value="france">France</option>
-                        <option value="british">British</option>
-                    </select><br>
-                    <label for="city">City </label><br>
-                    <input id="city" name="city">
-                    </section>
-                </td>
+                <option value="china">China</option>
+                <option value="america">America</option>
+                <option value="france">France</option>
+                <option value="british">British</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <p> Copyright?</p>
+            <label for="a"><input id="a" type="radio">All rights reserved </label>
+            <label for="b"><input id="b" type="radio" checked>Creative Commons</label>
+        </div>
+        <div class="form-group">
+            <p>Creative Types</p>
+            <label for="attribution"><input id="attribution"  type="checkbox">Attribution</label>
+            <label for="noncommercial"><input id="noncommercial"  type="checkbox">Noncommercial </label>
+            <label for="no derivative works"><input id="no derivative works"  type="checkbox">No Derivative Works</label>
+        </div>
 
-                <td>
-                    <section  id="section1">
+        <div class="form-group custom-control-inline">
 
-                        <p> Copyright?</p>
-                        <label for="a"><input id="a" type="radio">All rights reserved </label><br>
-                        <label for="b"><input id="b" type="radio" checked>Creative Commons</label>
-                    </section>
-                    <section id="section2">
-                        <p>Creative Types</p>
-                        <label for="attribution"><input id="attribution" type="checkbox">Attribution</label><br>
-                        <label for="noncommercial"><input id="noncommercial" type="checkbox">Noncommercial </label><br>
-                        <label for="no derivative works"><input id="no derivative works" type="checkbox">No Derivative Works</label>
-                    </section>
+            <label for="agree"><input id="agree"  type="checkbox"></label><p>I accept the software license</p>
+        </div>
 
-                </td>
 
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <p class="rectangle">  I accept the software license
-                        <label for="agree"><input id="agree" type="checkbox"></label></p></td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="rate">Rate this photo<br><input id="rate" type="number"></label><br>
-                    <label for="color">Color Collection<br><input id="color" type="color" value="#000000"></label>
-                </td>
-                <td>
-                    <label for="date">Date Taken <br><input id="date" type="date" value="年/月/日"></label><br>
-                    <label for="time">Time Taken <br><input id="time" type="time" value="--:--"></label><br>
-                </td>
-            </tr>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-md-4">
+            <label for="rate">Rate this photo</label>
+                    <input  type="number" class="form-control" id="rate"></div>
+                <div class="col-md-4">
+            <label for="color">Color Collection</label>
+                    <input type="color" class="form-control" id="color"  value="#000000"></div>
+        </div>
 
-            <tr>
 
-                <td colspan="2">
-                    <footer class="rectangle">
-                    <label for="sub"><input id="sub" type="submit" value="提交" class="rounded"></label>
-                    <label for="reset"><input id="reset" type="reset" value="Clear Form" class="rounded"></label>
-                    </footer>
-                </td>
-            </tr>
-        </table>
-    </fieldset>
 
-</form>
-</article>
+
+        <div class="form-group ">
+            <div class="row">
+                <div class="col-md-4">
+            <label for="date">Date Taken</label>
+                    <input type="date" class="form-control" id="date"  value="年/月/日"></div>
+                <div class="col-md-4">
+            <label for="time">Time Taken</label>
+                    <input type="time" class="form-control" id="time"  value="--:--"></div>
+        </div>
+
+         <div class="form-group">
+    <label for="sub"><input id="sub" type="submit" value="提交" ></label>
+             <label for="reset"><input id="reset" type="reset" value="Clear Form" ></label></div>
+</fieldset>
+    </form>
+
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 </body>
 </html>
