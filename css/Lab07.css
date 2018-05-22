@@ -1,0 +1,75 @@
+form{
+    margin: auto;
+}
+form fieldset{
+    margin: auto;
+    width: 500px;
+    border: none;
+}
+form select{
+    margin: auto;
+    width: 300px;
+}
+input{
+    width: 145px;
+    margin: auto;
+
+}
+#device{
+    clear: both;
+}
+#commit{
+    width: 300px;
+    margin: auto;
+    padding: 0;
+    background-color: white;
+    border-style: solid;
+    border-radius: 1px;
+    display: none;
+}
+#for_create_table{
+    display: none;
+}
+#for_attr,#for_attr_2{
+    margin: auto;
+    padding: 0;
+}
+#for_add_row{
+    display: none;
+}
+label{
+    margin: 0;
+    padding: 0;
+}
+#for_table{
+    margin: auto;
+    padding: 0;
+    width: 50%;
+}
+table{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+table th{
+    background-color: grey;
+}
+table td{
+    padding: 0 0.5em;
+}
+table tr:nth-of-type(odd) {
+    background-color: lightgray;
+
+}
+#device_2{
+    width: 300px;
+    margin: auto;
+}
+#for_table{
+    width: 80%;
+    margin: auto;
+}
+#div2{
+    margin: auto;
+}
