@@ -32,23 +32,22 @@ include 'travel-data.inc.php';
         
         <div class="btn-group countryButtons" role="group" aria-label="...">
               <a role="button" class="btn btn-default" href="list.php">All</a>
-           
-              <?php   
+            <?php   
               /* you will need to fill this place with appropriate PHP */
               /* hint: use array and loop */
               //the next line is an example
               //<a href="list.php?country=Canada" role="button" class="btn btn-default"> Canada</a>
+              $my=array("CA","GE","GR","IT","GB","US");
               $div0="";
-//                for ( $i=0;$i<sizeOf(${"countries"});$i++){
-//                   $div0.="<a href='list.php?country=".${"countries"}[$i]."' role=\"button\" class=\"btn btn-default\">".${"countries"}[$i]."<a/>";
-//                }
-              $div0.="<a href='list.php?country=".${"countries"}["CA"]."' role=\"button\" class=\"btn btn-default\">".${"countries"}["CA"]."<a/>";
-              $div0.="<a href='list.php?country=".${"countries"}["GE"]."' role=\"button\" class=\"btn btn-default\">".${"countries"}["GE"]."<a/>";
-              $div0.="<a href='list.php?country=".${"countries"}["GR"]."' role=\"button\" class=\"btn btn-default\">".${"countries"}["GR"]."<a/>";
-              $div0.="<a href='list.php?country=".${"countries"}["IT"]."' role=\"button\" class=\"btn btn-default\">".${"countries"}["IT"]."<a/>";
-              $div0.="<a href='list.php?country=".${"countries"}["GB"]."' role=\"button\" class=\"btn btn-default\">".${"countries"}["GB"]."<a/>";
-              $div0.="<a href='list.php?country=".${"countries"}["US"]."' role=\"button\" class=\"btn btn-default\">".${"countries"}["US"]."<a/>";
-                $div0.=" </div> ";
+              for ($i=0;$i<count($my);$i++){
+                  $div0.="<a href='list.php?country=".${"countries"}[$my[$i]]."' role=\"button\" class=\"btn btn-default\">".${"countries"}[$my[$i]]."<a/>";
+              }
+//              $div0.="<a href='list.php?country=".${"countries"}["CA"]."' role=\"button\" class=\"btn btn-default\">".${"countries"}["CA"]."<a/>";
+//              $div0.="<a href='list.php?country=".${"countries"}["GE"]."' role=\"button\" class=\"btn btn-default\">".${"countries"}["GE"]."<a/>";
+//              $div0.="<a href='list.php?country=".${"countries"}["GR"]."' role=\"button\" class=\"btn btn-default\">".${"countries"}["GR"]."<a/>";
+//              $div0.="<a href='list.php?country=".${"countries"}["IT"]."' role=\"button\" class=\"btn btn-default\">".${"countries"}["IT"]."<a/>";
+//              $div0.="<a href='list.php?country=".${"countries"}["GB"]."' role=\"button\" class=\"btn btn-default\">".${"countries"}["GB"]."<a/>";
+//              $div0.="<a href='list.php?country=".${"countries"}["US"]."' role=\"button\" class=\"btn btn-default\">".${"countries"}["US"]."<a/>";
                 echo $div0;
               ?>
                      
